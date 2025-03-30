@@ -1,0 +1,6 @@
+i am a python developer.
+i enjoy coding
+i am improving at logic building
+line1
+line2
+line3

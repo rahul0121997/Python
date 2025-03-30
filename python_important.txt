@@ -1,0 +1,19 @@
+Here are the most important exercises that will help you progress from basic to advanced Python knowledge:
+
+String Manipulation Challenges - Create functions that manipulate text in increasingly complex ways (find patterns, format data, extract information)
+Data Structure Transformations - Practice converting between lists, dictionaries, sets, and tuples to solve different problems efficiently
+File Processing Automation - Write scripts that read, process, and write files (CSV, JSON, text) with increasing complexity
+Algorithm Implementation - Recreate core algorithms (sorting, searching, graph traversal) from scratch to understand computational thinking
+Object-Oriented Projects - Design systems using classes, inheritance, and composition that model real-world relationships
+API Integration Challenges - Build applications that communicate with external APIs, handle responses, and process data
+Database CRUD Applications - Create increasingly complex applications that perform create, read, update, and delete operations
+Web Scraping Projects - Extract, clean, and analyze data from websites with varying structures
+Asynchronous Programming Tasks - Build applications using async/await to handle concurrent operations efficiently
+Testing Challenges - Write comprehensive test suites for your own code, learn TDD principles
+Decorators and Context Managers - Create your own to understand Python's advanced features
+Generator Functions - Build memory-efficient data processing pipelines with generators
+Recursive Problem Solving - Tackle problems that require recursive thinking (directory traversal, nested parsing)
+Design Pattern Implementation - Recreate common design patterns in Python to understand software architecture
+Package Development - Build your own installable Python package with documentation and tests
+
+These exercises follow a natural progression that builds your Python skills incrementally. Each one reinforces previous knowledge while introducing new concepts, helping you develop a comprehensive understanding of Python from fundamentals to advanced techniques.
