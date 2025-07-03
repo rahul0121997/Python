@@ -1,0 +1,411 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 **1. What is a Program?**\par
+\par
+**Theory:**\par
+A program is a set of instructions written in a programming language to perform a specific task or solve a problem. These instructions are executed by a computer to produce desired results. Programs are essential for making hardware perform useful tasks.\par
+\par
+**Lab Exercise:**\par
+\par
+**Hello World in Python:**\par
+\par
+```python\par
+print("Hello, World!")\par
+```\par
+\par
+**Hello World in JavaScript:**\par
+\par
+```javascript\par
+console.log("Hello, World!");\par
+```\par
+\par
+**Comparison:**\par
+\par
+* Python uses a simple `print()` function.\par
+* JavaScript uses `console.log()`.\par
+* Syntax in Python is cleaner; JavaScript requires semicolons and is used mainly for web.\par
+\par
+---\par
+\par
+**2. What is Programming?**\par
+\par
+**Theory:**\par
+Programming is the process of creating a set of instructions (code) that a computer can execute to perform specific tasks. It involves problem-solving, logical thinking, and knowledge of syntax and semantics of programming languages.\par
+\par
+**Key Steps in Programming:**\par
+\par
+1. Understand the problem\par
+2. Design the solution (algorithm)\par
+3. Write the code\par
+4. Test and debug\par
+5. Document and maintain\par
+\par
+---\par
+\par
+**3. Types of Programming Languages**\par
+\par
+**Theory:**\par
+\par
+* **High-level languages** (e.g., Python, Java) are user-friendly, abstract from hardware, and easier to code.\par
+* **Low-level languages** (e.g., Assembly, Machine code) are closer to hardware, less readable, but faster.\par
+\par
+---\par
+\par
+**4. World Wide Web & How Internet Works**\par
+\par
+**Lab Exercise:**\par
+Diagram: (Not visual here)\par
+\par
+* Client sends HTTP request \f1\u8594?\f0  DNS resolves IP \f1\u8594?\f0  Request sent to server \f1\u8594?\f0  Server processes \f1\u8594?\f0  Sends response \f1\u8594?\f0  Client receives and renders.\par
+\par
+**Theory:**\par
+\par
+* **Client:** Makes requests (e.g., browser)\par
+* **Server:** Responds with resources (e.g., HTML, JSON)\par
+\par
+---\par
+\par
+**5. Network Layers on Client and Server**\par
+\par
+**Lab Exercise:**\par
+Python HTTP server:\par
+\par
+```python\par
+from http.server import HTTPServer, BaseHTTPRequestHandler\par
+\par
+class SimpleHandler(BaseHTTPRequestHandler):\par
+    def do_GET(self):\par
+        self.send_response(200)\par
+        self.end_headers()\par
+        self.wfile.write(b"Hello from server")\par
+\par
+server = HTTPServer(('localhost', 8000), SimpleHandler)\par
+server.serve_forever()\par
+```\par
+\par
+**Theory:**\par
+\par
+* **TCP/IP Model:**\par
+\par
+  * Application (HTTP/FTP)\par
+  * Transport (TCP/UDP)\par
+  * Internet (IP)\par
+  * Network Access (Ethernet/Wi-Fi)\par
+\par
+---\par
+\par
+**6. Client and Servers**\par
+\par
+**Theory:**\par
+Client-server communication involves clients sending requests and servers responding, often over HTTP/HTTPS protocols.\par
+\par
+---\par
+\par
+**7. Types of Internet Connections**\par
+\par
+**Lab Exercise:**\par
+\par
+* **Broadband:** Fast, wired, stable.\par
+* **Fiber:** Very fast, expensive.\par
+* **Satellite:** Remote areas, high latency.\par
+\par
+**Theory:**\par
+Broadband uses copper lines, fiber uses light over glass fibers\f2\emdash much faster and more reliable.\par
+\par
+---\par
+\par
+**8. Protocols**\par
+\par
+**Lab Exercise:**\par
+\par
+* HTTP request: `curl {{\field{\*\fldinst{HYPERLINK http://example.com` }}{\fldrslt{http://example.com`\ul0\cf0}}}}\f2\fs22\par
+* FTP request: `curl {{\field{\*\fldinst{HYPERLINK ftp://ftp.example.com` }}{\fldrslt{ftp://ftp.example.com`\ul0\cf0}}}}\f2\fs22\par
+\par
+**Theory:**\par
+\par
+* **HTTP:** Unsecured\par
+* **HTTPS:** Secured via SSL/TLS\par
+\par
+---\par
+\par
+**9. Application Security**\par
+\par
+**Lab Exercise:**\par
+\par
+* **SQL Injection** \f1\u8594?\f0  Use ORM or parameterized queries.\par
+* **XSS** \f1\u8594?\f0  Sanitize inputs.\par
+* **CSRF** \f1\u8594?\f0  Use tokens.\par
+\par
+**Theory:**\par
+Encryption ensures data confidentiality and integrity between client and server.\par
+\par
+---\par
+\par
+**10. Software Applications and Its Types**\par
+\par
+**Lab Exercise:**\par
+\par
+* Chrome \f1\u8594?\f0  Application\par
+* Windows \f1\u8594?\f0  System\par
+* VLC \f1\u8594?\f0  Application\par
+* Disk Cleanup \f1\u8594?\f0  Utility\par
+* MS Word \f1\u8594?\f0  Application\par
+\par
+**Theory:**\par
+System software runs hardware; application software performs user tasks.\par
+\par
+---\par
+\par
+**11. Software Architecture**\par
+\par
+**Lab Exercise:**\par
+Three-tier architecture:\par
+\par
+* Presentation (UI)\par
+* Business Logic\par
+* Data (Database)\par
+\par
+**Theory:**\par
+Modularity increases maintainability, reusability, and ease of debugging.\par
+\par
+---\par
+\par
+**12. Layers in Software Architecture**\par
+\par
+**Lab Exercise:**\par
+Case Study:\par
+\par
+* Presentation: React.js UI\par
+* Business Logic: Django APIs\par
+* Data Layer: PostgreSQL\par
+\par
+**Theory:**\par
+Layers separate concerns, improving scalability, maintenance, and testing.\par
+\par
+---\par
+\par
+**13. Software Environments**\par
+\par
+**Lab Exercise:**\par
+Install Ubuntu VM \f1\u8594?\f0  Install Python \f1\u8594?\f0  Set dev environment.\par
+\par
+**Theory:**\par
+Development environments enable coding and testing without affecting live systems.\par
+\par
+---\par
+\par
+**14. Source Code**\par
+\par
+**Lab Exercise:**\par
+Upload to GitHub using `git init`, `add`, `commit`, `push`\par
+\par
+**Theory:**\par
+\par
+* **Source Code:** Human-readable\par
+* **Machine Code:** Executable binary\par
+\par
+---\par
+\par
+**15. GitHub and Introductions**\par
+\par
+**Lab Exercise:**\par
+Create repo \f1\u8594?\f0  `git push origin main`\par
+\par
+**Theory:**\par
+Version control tracks changes, collaboration, and rollback features.\par
+\par
+---\par
+\par
+**16. Student Account in GitHub**\par
+\par
+**Lab Exercise:**\par
+Create student GitHub \f1\u8594?\f0  Collaborate via fork, pull request.\par
+\par
+**Theory:**\par
+Students learn teamwork, open-source contributions, and version control skills.\par
+\par
+---\par
+\par
+**17. Types of Software**\par
+\par
+**Lab Exercise:**\par
+\par
+* Windows (System)\par
+* MS Word (Application)\par
+* CCleaner (Utility)\par
+* Chrome (Application)\par
+* Antivirus (Utility)\par
+\par
+**Theory:**\par
+Open-source: Free to modify\par
+Proprietary: Restricted license\par
+\par
+---\par
+\par
+**18. GIT and GitHub Training**\par
+\par
+**Lab Exercise:**\par
+Use `git clone`, `git branch`, `git merge`\par
+\par
+**Theory:**\par
+GIT allows parallel development, better tracking, and conflict resolution.\par
+\par
+---\par
+\par
+**19. Application Software**\par
+\par
+**Lab Exercise:**\par
+MS Word: Docs\par
+Excel: Sheets\par
+Chrome: Web\par
+Zoom: Meetings\par
+Slack: Team comms\par
+\par
+**Theory:**\par
+Application software increases business productivity and workflow automation.\par
+\par
+---\par
+\par
+**20. Software Development Process**\par
+\par
+**Lab Exercise:**\par
+Flowchart: Plan \f1\u8594?\f0  Design \f1\u8594?\f0  Code \f1\u8594?\f0  Test \f1\u8594?\f0  Deploy \f1\u8594?\f0  Maintain\par
+\par
+**Theory:**\par
+Stages: Requirement, Design, Implementation, Testing, Deployment, Maintenance\par
+\par
+---\par
+\par
+**21. Software Requirement**\par
+\par
+**Lab Exercise:**\par
+Library System:\par
+\par
+* Add book\par
+* Search\par
+* Borrow\par
+* Return\par
+* Admin login\par
+\par
+**Theory:**\par
+Requirement analysis ensures the product meets user expectations and scope.\par
+\par
+---\par
+\par
+**22. Software Analysis**\par
+\par
+**Lab Exercise:**\par
+Functional Analysis:\par
+\par
+* View products\par
+* Add to cart\par
+* Make payment\par
+* Track order\par
+\par
+**Theory:**\par
+Software analysis defines what the system should do.\par
+\par
+---\par
+\par
+**23. System Design**\par
+\par
+**Lab Exercise:**\par
+Food App:\par
+\par
+* User app (search, order)\par
+* Admin panel (menu, status)\par
+* Delivery panel\par
+\par
+**Theory:**\par
+System design includes architecture, data models, interface design.\par
+\par
+---\par
+\par
+**24. Software Testing**\par
+\par
+**Lab Exercise:**\par
+Test cases for calculator:\par
+\par
+* 2+2 = 4\par
+* 4/0 = error\par
+\par
+**Theory:**\par
+Testing ensures correctness, reliability, and quality.\par
+\par
+---\par
+\par
+**25. Maintenance**\par
+\par
+**Lab Exercise:**\par
+Example: Zoom fixed audio bug post user report.\par
+\par
+**Theory:**\par
+Types: Corrective, Adaptive, Perfective, Preventive\par
+\par
+---\par
+\par
+**26. Development**\par
+\par
+**Theory:**\par
+\par
+* Web: Browser-based, remote access\par
+* Desktop: Installed, offline, more hardware access\par
+\par
+---\par
+\par
+**27. Web Application**\par
+\par
+**Theory:**\par
+Web apps offer platform independence, easy updates, no installation needed.\par
+\par
+---\par
+\par
+**28. Designing**\par
+\par
+**Theory:**\par
+UI/UX enhances usability, accessibility, and user satisfaction.\par
+\par
+---\par
+\par
+**29. Mobile Application**\par
+\par
+**Theory:**\par
+\par
+* Native: Platform-specific, better performance\par
+* Hybrid: One codebase, cross-platform\par
+\par
+---\par
+\par
+**30. DFD (Data Flow Diagram)**\par
+\par
+**Lab Exercise:**\par
+Hospital DFD:\par
+\par
+* Patient \f1\u8594?\f0  Registration \f1\u8594?\f0  Doctor \f1\u8594?\f0  Diagnosis \f1\u8594?\f0  Records\par
+\par
+**Theory:**\par
+DFDs visualize data flow, process, and storage in a system.\par
+\par
+---\par
+\par
+**31. Desktop Application**\par
+\par
+**Lab Exercise:**\par
+Python + Tkinter Calculator GUI\par
+\par
+**Theory:**\par
+Pros: Performance, offline use\par
+Cons: OS dependent, installation required\par
+\par
+---\par
+\par
+**32. Flow Chart**\par
+\par
+**Lab Exercise:**\par
+Flowchart: User inputs \f1\u8594?\f0  Validate \f1\u8594?\f0  Register \f1\u8594?\f0  Confirm\par
+\par
+**Theory:**\par
+Flowcharts aid planning, visual logic representation, and debugging\lang9\par
+}
+ 
