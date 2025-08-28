@@ -1,6 +1,6 @@
-# python program for simple interest
+# python program for simple interestgit
 
-simple_intrest = lambda x,y,z:(x*y*y) /100
+simple_intrest = lambda x,y,z:(x*y*z) /100
 
 x =8
 y = 6
